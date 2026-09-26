@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #020617;
+    color: #f8fafc;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+}
+
+/* Mermaid SVG styling custom rules */
+.mermaid-svg-container svg {
+  height: auto;
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
+.mermaid-svg-container .node rect,
+.mermaid-svg-container .node circle,
+.mermaid-svg-container .node polygon {
+  fill: #0f172a !important;
+  stroke: #4f46e5 !important;
+  stroke-width: 1.5px !important;
+}
+
+.mermaid-svg-container .node .label {
+  color: #f8fafc !important;
+  font-family: 'Fira Code', monospace !important;
+  font-size: 13px !important;
+}
+
+.mermaid-svg-container .edgePath .path {
+  stroke: #6366f1 !important;
+  stroke-width: 2px !important;
+}
+
+.mermaid-svg-container .edgeLabel {
+  background-color: #0f172a !important;
+  color: #94a3b8 !important;
+  font-family: 'Fira Code', monospace !important;
+  font-size: 11px !important;
+}
+
+.mermaid-svg-container .cluster rect {
+  fill: #090d16 !important;
+  stroke: #334155 !important;
+  stroke-width: 1.5px !important;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
